@@ -3,10 +3,10 @@ import cv2 as cv
 
 imgA = cv.imread("image/work2.jpg", cv.IMREAD_GRAYSCALE)
 
-user_specific_value = int(input("Enter mean value: "))
-window_size = int(input("Enter window size: "))
-gamma_more = float(input("Enter the gamma value for γ < 1: "))
-gammma_less = float(input("Enter the gamma value for γ > 1: "))
+user_specific_value = int(input("Enter mean value: ")) 
+window_size = int(input("Enter window size: ")) 
+gamma_more = float(input("Enter the gamma value for γ < 1: ")) #ป้อนค่าแกมม่าที่น้อยกว่า 1
+gammma_less = float(input("Enter the gamma value for γ > 1: ")) #ป้อนค่าแกมม่าที่มากกว่า 1
 
 block_size = (window_size, window_size)  
 stride = (block_size[0] // 2, block_size[1] // 2)  
